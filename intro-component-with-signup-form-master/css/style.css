@@ -23,7 +23,7 @@ html{
      font-size: 62.5%;
 }
 body{
-     font-family: 'Poppins', sans-serif;;
+     font-family: 'Poppins', sans-serif;
      font-size: 1.6rem;    
      background: url(../images/bg-intro-mobile.png) var(--Red) no-repeat center top;        
 }
@@ -56,7 +56,32 @@ article.box-free{
      color: #fff;
      font-weight: 400;
      font-size: 1.5rem;
+     margin-bottom: 2.5rem;
 }
 article.box-free span{
      font-weight: 600;
+}
+section.box-form{     
+     width: 100%;
+     background-color: #fff;
+     border-radius: 1rem;
+     padding: 2rem;
+}
+section.box-form form{
+     display: flex;
+     flex-direction: column;
+}
+section.box-form form > input{
+     width: 100%;
+     padding: 2rem;
+     margin-bottom: 2rem;
+     border-radius: 0.5rem;
+     border: 1px solid rgba(0, 0, 0, 0.13);
+}
+section.box-form form > input::placeholder{
+     font-weight: 600;
+     font-family: 'Poppins', sans-serif;
+}
+section.box-form form button{
+     background-color: var(--Green);
 }
