@@ -24,5 +24,18 @@ html{
 }
 body{
      font-family: 'Poppins', sans-serif;;
-     font-size: 1.6rem;            
+     font-size: 1.6rem;    
+     background: url(../images/bg-intro-mobile.png) var(--Red) no-repeat center top;        
+}
+section.container{
+     padding: 9rem 4rem;
+}
+section.left{
+     color: #fff;     
+}
+section.left h2{
+     font-weight: 600;
+     text-align: center;
+     width: 25rem;     
+     margin: 0 auto;
 }
