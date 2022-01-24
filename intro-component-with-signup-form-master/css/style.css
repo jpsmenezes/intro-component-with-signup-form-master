@@ -12,3 +12,17 @@
 --Dark-Blue: hsl(249, 10%, 26%); 
 --Grayish-Blue: hsl(246, 25%, 77%);
 }
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html{      
+     /*Cada 1rem será considerado 10px*/
+     font-size: 62.5%;
+}
+body{
+     font-family: 'Poppins', sans-serif;;
+     font-size: 1.6rem;            
+}
