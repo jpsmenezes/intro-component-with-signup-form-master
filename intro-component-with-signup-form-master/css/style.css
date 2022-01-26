@@ -101,6 +101,9 @@ section.box-form form button{
      border:none ;
      box-shadow: 0 0.3rem #34b87e;
 }
+section.box-form form button:hover{
+     background-color: #77e2b4;
+}
 section.box-form form > span{     
      color: var(--Grayish-Blue);
      font-size: 1rem;
