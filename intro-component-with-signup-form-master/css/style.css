@@ -41,13 +41,16 @@ section.left h2{
      margin: 0 auto;
 }
 section.left p{
-     text-align: center;
-     margin-top: 2rem;
-     margin-bottom: 6rem;
+     max-width: 54rem;
+     text-align: center;    
+     margin: 2rem auto 6rem;
+}
+section.right{
+     max-width: 54rem;
+     margin: 0 auto;
 }
 article.box-free{
-     width: 100%;
-     max-width: 54rem;
+     width: 100%;    
      height: 8rem;
      border-radius: 1rem;
      box-shadow: 0 0.8rem rgba(0, 0, 0, 0.219);
@@ -56,8 +59,7 @@ article.box-free{
      background-color: var(--Blue);
      color: rgba(255, 255, 255, 0.692);
      font-weight: 400;
-     font-size: 1.5rem;
-     margin: 0 auto;
+     font-size: 1.5rem;     
      margin-bottom: 2.5rem;
 }
 article.box-free span{
@@ -65,13 +67,12 @@ article.box-free span{
      color: #fff;
 }
 section.box-form{     
-     width: 100%;
-     max-width: 54rem;
+     width: 100%;     
      background-color: #fff;
      border-radius: 1rem;
      padding: 2rem 2rem 0.5rem;
      box-shadow: 0 0.8rem rgba(0, 0, 0, 0.123);
-     margin: 0 auto;
+    
 }
 section.box-form form{
      display: flex;
@@ -115,4 +116,27 @@ section.box-form form > span > a{
      text-decoration: none;
      font-weight: 700;
      color: var(--Red);
+}
+/*///////////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 1000px){
+     body{          
+          background: url(../images/bg-intro-desktop.png) var(--Red) no-repeat center top;        
+     }
+     section.container{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+     section.left p,
+     section.left h2{         
+          text-align: left; 
+          margin: 0 0;        
+     }     
+     section.left{         
+          padding: 5rem;
+     }
+     section.right{
+          max-width: 74rem;
+     }
+
 }
