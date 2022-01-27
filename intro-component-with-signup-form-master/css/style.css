@@ -91,6 +91,9 @@ section.box-form form > input::placeholder{
      font-weight: 600;
      font-family: 'Poppins', sans-serif;
 }
+section.box-form form > input:focus{
+     outline: 1px solid var(--Blue);
+}
 section.box-form form button{
      background-color: var(--Green);
      width: 100%;
@@ -133,7 +136,14 @@ section.box-form form > span > a{
      section.left h2{         
           text-align: left; 
           margin: 0 0;        
-     }     
+     }    
+     section.left h2{
+          width: 100%;
+          font-size: 4.7rem; 
+          font-weight: 700;
+          line-height: 5rem; 
+          margin-bottom: 2rem;       
+     } 
      section.left{         
           padding: 5rem;
      }
