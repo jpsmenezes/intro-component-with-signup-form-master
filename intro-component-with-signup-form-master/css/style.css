@@ -27,7 +27,10 @@ body{
      font-size: 1.6rem;    
      background: url(../images/bg-intro-mobile.png) var(--Red) no-repeat center top;        
 }
-section.container{
+section.container{     
+     width: 100%;
+     max-width: 1200px;
+     margin: 0 auto;
      padding: 9rem 3rem 7rem;
 }
 section.left{
@@ -50,8 +53,7 @@ section.right{
      margin: 0 auto;
 }
 article.box-free{
-     width: 100%;    
-     height: 8rem;
+     width: 100%;     
      border-radius: 1rem;
      box-shadow: 0 0.8rem rgba(0, 0, 0, 0.219);
      text-align: center;
@@ -136,7 +138,7 @@ section.box-form form > span > a{
           padding: 5rem;
      }
      section.right{
-          max-width: 74rem;
+          width: 100%;
      }
 
 }
