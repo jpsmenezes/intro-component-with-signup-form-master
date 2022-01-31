@@ -106,6 +106,7 @@ section.box-form form button{
      text-transform: uppercase;
      color: #fff;
      border:none ;
+     cursor: pointer;
      box-shadow: 0 0.3rem #34b87e;
 }
 section.box-form form button:hover{
