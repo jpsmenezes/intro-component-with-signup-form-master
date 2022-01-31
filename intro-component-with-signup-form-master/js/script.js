@@ -13,6 +13,12 @@ let validator = {
               if (send) {            
                   form.submit();
               }
+       },
+       checkInput: (input) => {
+
+       },
+       showError: (input, erro) => {
+
        }
 }
 
