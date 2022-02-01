@@ -13,13 +13,11 @@ let validator = {
             if (check !== true) {
                 send = false;
                 validator.showError(input, check);
-            }
-            if (send) {
-                form.submit();
-            }
+            }            
         }
-
-
+        if (send) {
+            form.submit();
+        }
     },
     checkInput: (input) => {
 
