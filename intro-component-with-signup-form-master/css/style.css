@@ -95,8 +95,9 @@ section.box-form form > input::placeholder{
 section.box-form form > input:focus{
      outline: 1px solid var(--Blue);
 }
-section.box-form form > input.errorInput{
-     background: url(.././images/icon-error.svg) no-repeat;
+section.box-form form > input.errorInput{         
+     background: url(.././images/icon-error.svg) no-repeat;  
+     background-position: 95%;                
 }
 section.box-form form button{
      background-color: var(--Green);
