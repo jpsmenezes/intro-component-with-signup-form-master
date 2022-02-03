@@ -81,21 +81,21 @@ section.box-form form{
      display: flex;
      flex-direction: column;
 }
-section.box-form form > input{
+section.box-form form  input{
      width: 100%;
      padding: 2rem;
      margin-bottom: 1.5rem;
      border-radius: 0.5rem;
      border: 1px solid rgba(0, 0, 0, 0.13);
 }
-section.box-form form > input::placeholder{
+section.box-form form  input::placeholder{
      font-weight: 600;
      font-family: 'Poppins', sans-serif;
 }
-section.box-form form > input:focus{
+section.box-form form  input:focus{
      outline: 1px solid var(--Blue);
 }
-section.box-form form > input.errorInput{         
+section.box-form form  input.errorInput{         
      background: url(.././images/icon-error.svg) no-repeat;  
      background-position: 95%;                
 }
@@ -127,6 +127,12 @@ section.box-form form > span > a{
      text-decoration: none;
      font-weight: 700;
      color: var(--Red);
+}
+.error{
+     position: relative;
+     color: hsl(0, 74%, 74%);
+     font-size: 1rem;
+     padding: 0 3rem;
 }
 /*///////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 1000px){

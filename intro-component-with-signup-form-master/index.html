@@ -23,10 +23,18 @@
             </article>
             <section class="box-form">
                 <form action="">
-                    <input type="text" name="first-name" id="first-name" placeholder="First Name" data-rules="required|min=3"/>
-                    <input type="text" name="last-name" id="last-name" placeholder="Last Name" data-rules="required|min=3"/>
-                    <input type="email" name="email" id="email" placeholder="Email Address" data-rules="required|email"/>
-                    <input type="password" name="password" id="password" placeholder="Password" data-rules="required|min=4"/>
+                    <div>
+                        <input type="text" name="first-name" id="first-name" placeholder="First Name" data-rules="first|min=3"/>
+                    </div>
+                    <div>
+                        <input type="text" name="last-name" id="last-name" placeholder="Last Name" data-rules="last|min=3"/>
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Email Address" data-rules="required|email"/>
+                    </div>
+                    <div>
+                        <input type="password" name="password" id="password" placeholder="Password" data-rules="password|min=4"/>
+                    </div>                   
                     <button>Claim your free trial </button>
                     <span>By clicking the button, you are agreeing to our <a href="">Terms and Services</a></span>
                 </form>

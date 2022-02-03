@@ -25,9 +25,19 @@ let validator = {
         for (let k in rules) {
             let rDetails = rules[k].split('=');
             switch (rDetails[0]) {
-                case 'required':
+                case 'first':
                     if (input.value == "") {
-                        return 'Campo Obrigatório'
+                        return 'First Name cannot be embty'
+                    }
+                    break;
+                case 'last':
+                    if (input.value == "") {
+                        return 'Last Name cannot be embty'
+                    }
+                    break;
+                case 'password':
+                    if (input.value == "") {
+                        return 'Password cannot be embty'
                     }
                     break;
                 case 'min':
@@ -35,11 +45,16 @@ let validator = {
                         return 'Obrigatório ter ao menos ' + rDetails[1] + ' Caracteres';
                     }
                     break;
+                case 'required':
+                        if (input.value == "") {
+                            return 'Email cannot be embty'
+                        }
+                        break;
                 case 'email':
                     if (input.value != '') {
                         let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                         if (!regex.test(input.value.toLowerCase())) {
-                            return 'E-mail digitado não é válido!';
+                            return 'Looks like this is not an email';
                         }
                     }
                     break;
@@ -51,9 +66,22 @@ let validator = {
         input.style.borderColor = 'hsl(0, 74%, 74%)'; // adicionando uma borda vermelha no input com o erro
         input.style.borderWidth = "2.5px"; // largura da borda        
         input.classList.add('errorInput');
+
+        let errorElement = document.createElement('div'); // criando uma div 
+        errorElement.classList.add('error'); // adiciionando uma class na div
+        errorElement.innerHTML = erro;
+        input.parentElement.insertBefore(errorElement, input.ElementSibling);
     },
     clearError: () => {
+        let inputs = form.querySelectorAll('input');
+        for(let i = 0; i < inputs.length; i++){
+            inputs[i].style = '';
+        }
 
+        let errorElement = document.querySelectorAll('.error');
+        for(let i = 0; i < errorElement.length; i++){
+            errorElement[i].remove();
+        }
     }
 }
 
