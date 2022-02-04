@@ -71,17 +71,20 @@ let validator = {
         errorElement.classList.add('error'); // adiciionando uma class na div
         errorElement.innerHTML = erro;
         input.parentElement.insertBefore(errorElement, input.ElementSibling);
+
+        errorElement.style.marginBottom = '0.4rem';
     },
     clearError: () => {
         let inputs = form.querySelectorAll('input');
         for(let i = 0; i < inputs.length; i++){
             inputs[i].style = '';
+            inputs[i].classList.remove('errorInput');
         }
 
         let errorElement = document.querySelectorAll('.error');
         for(let i = 0; i < errorElement.length; i++){
             errorElement[i].remove();
-        }
+        }       
     }
 }
 
