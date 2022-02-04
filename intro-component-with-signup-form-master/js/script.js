@@ -78,7 +78,7 @@ let validator = {
         let inputs = form.querySelectorAll('input');
         for(let i = 0; i < inputs.length; i++){
             inputs[i].style = '';
-            inputs[i].classList.remove('errorInput');
+            inputs[i].classList.remove('errorInput'); //remover o icone do erro
         }
 
         let errorElement = document.querySelectorAll('.error');
