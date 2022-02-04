@@ -81,10 +81,12 @@ section.box-form form{
      display: flex;
      flex-direction: column;
 }
+section.box-form form div{
+     margin-bottom: 1.5rem;
+}
 section.box-form form  input{
      width: 100%;
-     padding: 2rem;
-     margin-bottom: 1.5rem;
+     padding: 2rem;     
      border-radius: 0.5rem;
      border: 1px solid rgba(0, 0, 0, 0.13);
 }
